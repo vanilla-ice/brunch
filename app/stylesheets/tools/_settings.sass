@@ -1,0 +1,36 @@
+
+
+*
+  box-sizing: border-box
+
+
+.container
+  width: 100%
+  max-width: 1200px
+  min-height: 100%
+  margin: 0 auto
+  position: relative
+  padding: 0 65px
+  text-align: left
+  
+
+
+.column
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+
+.row
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+@keyframes myAnimation
+  0%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(50px)
+
+  100%
+    transform: translateY(0)

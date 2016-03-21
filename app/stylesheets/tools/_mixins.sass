@@ -1,0 +1,29 @@
+
+
+@function rem($size)
+  $remSize: $size / $base-font-size
+  @return $remSize * 1rem
+
+
+
+@function em($size, $context: $base-font-size)
+  @return $size / $context + em
+
+
+=mobile()
+  +max-screen(767px)
+    @content
+
+
+=tablet()
+  +screen(768px, 991px)
+    @content
+
+=normal()
+  +screen(992px, 1200px)
+    @content
+
+
+=hd()
+  +min-screen(1201px)
+    @content
