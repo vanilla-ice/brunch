@@ -1,6 +1,5 @@
 import $ from "jquery";
 
-document.addEventListener('DOMContentLoaded', () => {
-  
-  console.log('Initialized app');
+$(document).ready(() => {
+  console.log('yeah')
 });
